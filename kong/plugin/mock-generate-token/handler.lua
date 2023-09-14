@@ -58,37 +58,37 @@ function MockGenerateToken:access(config)
     kong.log("access")
     generate(config)
 end
-function CustomHandler:ws_handshake(config)
+function MockGenerateToken:ws_handshake(config)
     -- Implement logic for the WebSocket handshake here
     kong.log("ws_handshake")
   end
   
-  function CustomHandler:header_filter(config)
+  function MockGenerateToken:header_filter(config)
     -- Implement logic for the header_filter phase here (http)
     kong.log("header_filter")
   end
   
-  function CustomHandler:ws_client_frame(config)
+  function MockGenerateToken:ws_client_frame(config)
     -- Implement logic for WebSocket client messages here
     kong.log("ws_client_frame")
   end
   
-  function CustomHandler:ws_upstream_frame(config)
+  function MockGenerateToken:ws_upstream_frame(config)
     -- Implement logic for WebSocket upstream messages here
     kong.log("ws_upstream_frame")
   end
   
-  function CustomHandler:body_filter(config)
+  function MockGenerateToken:body_filter(config)
     -- Implement logic for the body_filter phase here (http)
     kong.log("body_filter")
   end
   
-  function CustomHandler:log(config)
+  function MockGenerateToken:log(config)
     -- Implement logic for the log phase here (http/stream)
     kong.log("log")
   end
   
-  function CustomHandler:ws_close(config)
+  function MockGenerateToken:ws_close(config)
     -- Implement logic for WebSocket post-connection here
     kong.log("ws_close")
   end
