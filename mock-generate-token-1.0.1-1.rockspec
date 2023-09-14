@@ -18,7 +18,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-        handler = "kong/plugin/handler.lua",
-        schema = "kong/plugin/schema.lua"
+        handler = "kong/plugins/mock-generate-token/handler.lua",
+        schema = "kong/plugins/mock-generate-token/schema.lua"
     }
 }
